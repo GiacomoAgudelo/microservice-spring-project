@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: skill-test
+  profiles:
+    active: develop
+  jpa:
+    show_sql: true
+    hibernate:
+      ddl-auto: update
+
+
+

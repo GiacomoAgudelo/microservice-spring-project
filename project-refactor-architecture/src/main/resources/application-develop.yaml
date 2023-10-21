@@ -1,0 +1,19 @@
+spring:
+  profile: develop
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/myteam?useSSL=FALSE&useLegacyDatetimeCode=false&serverTimezone=UTC+1
+    username: postgres
+    password: password
+    hikari:
+      connection-timeout: 60000
+      idle-timeout: 60000
+      maximum-pool-size: 60
+      minimum-idle: 40
+      max-lifetime: 900000
+      pool-name: scl-pool
+server:
+  port: 8092
